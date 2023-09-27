@@ -1,7 +1,5 @@
-###### SECOND ASSIGNMENTS
-
-## Andrea Scalenghe - 913359
-## Matteo Morabito - 918551
+## Andrea Scalenghe
+## Matteo Morabito 
 
 #First of all we extract the dataset from the UsingR libray
 
@@ -12,8 +10,6 @@ attach(babies)
 str(babies)
 
 dim(babies)
-
-#Exercise 1
 
 #At first we plot some useful graphs for a complete descriptive analysis of wt
 
@@ -59,8 +55,6 @@ summary(marital)
 #In fact the summary tells us that the median, the mean and the first and third quantile 
 #are all 1. It means that, as said, almost all the values are 1.
 
-
-#Exercise 2
 
 #We aim to find the best estimator for the babies weight. In order to do so we
 #compute a correlation test and look at the p-value. The two hypotheses are:
@@ -115,8 +109,6 @@ summary(model)
 #in the outcome is little.
 #We see also that the best predictor is confirmed to be the gestation. 
 
-
-#Exercise 3
 
 parity1<-parity
 table(parity1)
@@ -187,7 +179,6 @@ kruskal.test(wt~parity1)
 par(mfrow=c(1,1))
 boxplot(wt~parity1, col = "darkorange")
 
-#Exercise 4
 
 #Let's calculate the probability of each marital status:
 P0 <- sum(marital==0)/length(marital)
